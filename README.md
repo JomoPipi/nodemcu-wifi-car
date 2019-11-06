@@ -9,6 +9,6 @@ DC motor control: https://www.youtube.com/watch?v=d7oFD-zQpuQ
 
 Short demo: https://www.youtube.com/watch?v=6uOXedOu_T4
 
-Parts: NodeMCU development board, l293d motor driver chip, dc motor, 3X 3.7v lipo battery, servo motor, breadboard connection wires, wheels.
+Parts: NodeMCU development board, l293d motor driver chip, dc motor, 3X 3.7v lipo battery, servo motor, breadboard, connection wires, wheels.
 
 ![car-pics](https://raw.githubusercontent.com/JomoPipi/nodemcu-wifi-car/master/IMG_1726.jpg)
