@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Car</title>
+      <link href='main.css' rel='stylesheet' type='text/css'>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="144x144"  href="/favicon-144x144.png">
+      <link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="theme-color" content="#00878f">
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+      <script src="WebSocket.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <header>
+         <h1>CAR</h1>
+      </header>
+      <div id="leftdiv">
+         steer:
+         <input class="steer" id="servo" type="range" min="0" max="1023" step="1" oninput="sendDATA();" value="512"
+            onpointerup="this.value=512; sendDATA();" ontouchend="this.value=512; sendDATA();" >
+      </div>
+      <div id="rightdiv">
+         drive:
+         <input class="power" id="motor" type="range" min="0" max="1023" step="1" oninput="sendDATA();" value="512" 
+            onpointerup="this.value=512; sendDATA();" ontouchend="this.value=512; sendDATA();" >
+      </div>
+      <div id="calibrate">
+         calibrate:
+         <input class="steer" id="calib" type="range" min="0" max="180" step="1" oninput="sendDATA();"
+         onpointerup="sendDATA();" ontouchend="sendDATA();" value="0">
+      </div>
+      <div id="calibrate-text"></div>
+   </body>
+</html>
+
